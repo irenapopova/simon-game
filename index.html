@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon game</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+  </head>
+
+  <body>
+    <div class="app"><!--
+    --><div class="pad"><!--
+    --><button id="b1" class="button off" data-number="1"></button><!--
+    --><button id="b2" class="button off" data-number="2"></button><!--
+    --><button id="b3" class="button off" data-number="3"></button><!--
+    --><button id="b4" class="button off" data-number="4"></button><!--
+  --></div>
+      <div class="control">
+        <div><p id="round">00</p></div>
+        <div class="controlButtons">
+          <div><button id="startButton">Start</button></div>
+          <div><button id="strictButton">Strict</button></div>
+        </div>
+        <div><p class="logo">Simon<small>&reg;</small></p></div>
+      </div>
+      <div class="message">
+        <p id="strictError">Error, Press Start Again</p>
+        <p id="tryAgain">Watch Me and Try Again</p>
+        <p id="yourTurn">Your Turn</p>
+        <p id="youWin">YOU WIN!!!</p>
+      </div>
+    </div>
+
+    <!-- AUDIO FOR BUTTONS -->
+    <audio id="tone1">
+      <source src="assets/audio/simonSound1.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="tone2">
+      <source src="assets/audio/simonSound2.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="tone3">
+      <source src="assets/audio/simonSound3.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="tone4">
+      <source src="assets/audio/simonSound4.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="assets/scripts/script.js"></script>
+  </body>
+</html>
